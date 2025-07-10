@@ -31,6 +31,10 @@ const firstpic = function () {
           btn.closest('.col-md-4').classList.add('d-none');
         });
       });
+      const newP = document.querySelectorAll('.text-muted');
+      newP.forEach((newId, i) => {
+        newId.innerHTML = `${newImg.photos[i].id}`;
+      });
     })
     .catch((err) => {
       console.log('ERRORE', err);
