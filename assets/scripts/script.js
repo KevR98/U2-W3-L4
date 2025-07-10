@@ -21,7 +21,7 @@ const firstpic = function () {
       const img = document.querySelectorAll('.card-img-top');
       loadNewImg.addEventListener('click', () => {
         for (let i = 0; i < img.length; i++) {
-          img[i].src = newImg.photos[i].src.medium;
+          img[i].setAttribute('src', newImg.photos[i].src.small);
         }
       });
       const hide = document.querySelectorAll('.btn-group .btn:nth-of-type(2)');
@@ -31,7 +31,7 @@ const firstpic = function () {
           btn.closest('.col-md-4').classList.add('d-none');
         });
       });
-      const newP = document.querySelectorAll('.text-muted');
+      const newP = document.querySelectorAll('.card small');
       newP.forEach((newId, i) => {
         newId.innerHTML = `${newImg.photos[i].id}`;
       });
@@ -60,7 +60,7 @@ const secondpic = function () {
       const img = document.querySelectorAll('.card-img-top');
       loadNewImg.addEventListener('click', () => {
         for (let i = 0; i < img.length; i++) {
-          img[i].src = newImg.photos[i].src.medium;
+          img[i].setAttribute('src', newImg.photos[i].src.small);
         }
       });
     })
