@@ -24,6 +24,10 @@ const firstpic = function () {
           img[i].src = newImg.photos[i].src.medium;
         }
       });
+      const hide = document.querySelectorAll('.btn-group .btn:nth-of-type(2)');
+      hide.forEach((btn, i) => {
+        btn.innerHTML = 'Hide';
+      });
     })
     .catch((err) => {
       console.log('ERRORE', err);
