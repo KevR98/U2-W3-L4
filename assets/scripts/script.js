@@ -3,7 +3,7 @@ const urlTigers = 'https://api.pexels.com/v1/search?query=tigers';
 const api = 'EWSPQiHinqL5vC1sForGvbNwTZklElsUkqVUtxokDCasRmMVndz1Do3q';
 
 const firstpic = function () {
-  fetch(loadhamster, {
+  fetch(urlHamster, {
     headers: {
       Authorization: api,
     },
@@ -31,7 +31,7 @@ const firstpic = function () {
 };
 
 const secondpic = function () {
-  fetch(loadtigers, {
+  fetch(urlTigers, {
     headers: {
       Authorization: api,
     },
