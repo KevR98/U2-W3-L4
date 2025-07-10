@@ -27,6 +27,9 @@ const firstpic = function () {
       const hide = document.querySelectorAll('.btn-group .btn:nth-of-type(2)');
       hide.forEach((btn, i) => {
         btn.innerHTML = 'Hide';
+        btn.addEventListener('click', function () {
+          btn.closest('.col-md-4').classList.add('d-none');
+        });
       });
     })
     .catch((err) => {
