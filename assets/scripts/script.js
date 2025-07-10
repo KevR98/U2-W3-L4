@@ -1,5 +1,5 @@
-const loadhamster = 'https://api.pexels.com/v1/search?query=hamsters';
-const loadtigers = 'https://api.pexels.com/v1/search?query=tigers';
+const urlHamster = 'https://api.pexels.com/v1/search?query=hamsters';
+const urlTigers = 'https://api.pexels.com/v1/search?query=tigers';
 const api = 'EWSPQiHinqL5vC1sForGvbNwTZklElsUkqVUtxokDCasRmMVndz1Do3q';
 
 const firstpic = function () {
